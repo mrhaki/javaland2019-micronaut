@@ -1,0 +1,312 @@
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+pre.small {
+  font-size: 0.7em;
+  padding: 0;
+}
+sup {
+  font-size: 0.3em;
+  position: relative;
+  top: -1.5em;
+}
+h1 a {
+  border: none;
+}
+h1.name {
+  font-size: 1.3em;
+  margin: 0;
+}
+.avatar {
+  -webkit-filter: grayscale(30%);
+  filter: grayscale(30%);
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 0.5em 0;
+}
+.bespoke-slide {
+  z-index: 1;
+}
+pre {
+  padding: 2em !important;
+}
+pre,
+code {
+  margin: 0 !important;
+}
+.backdrop--orion {
+  background-image: url("../images/cocktail.png");
+  background-position: 0 0;
+}
+.backdrop--orion.bespoke-backdrop-active {
+  opacity: 0.4;
+}
+.backdrop--orion.bespoke-backdrop-before {
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}
+.backdrop--book {
+  background-image: url("../images/book.jpg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.backdrop--book.bespoke-backdrop-active {
+  opacity: 0.15;
+}
+.backdrop--poisonapple {
+  background-image: url("../images/poisonapple.gif");
+  background-position: 50% 80%;
+}
+.backdrop--poisonapple.bespoke-backdrop-active {
+  opacity: 0.25;
+}
+.backdrop--rat-pack {
+  background-color: #000;
+  background-image: url("../images/rat-pack.jpg");
+  background-repeat: no-repeat;
+}
+.backdrop--rat-pack.bespoke-backdrop-active {
+  opacity: 0.15;
+}
+.backdrop--cocktail {
+  background-image: url("../images/cocktail.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.backdrop--cocktail.bespoke-backdrop-active {
+  opacity: 0.15;
+}
+.backdrop--cocktail.bespoke-backdrop-after {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.backdrop--cocktail.bespoke-backdrop-before {
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}
+.backdrop--chrome {
+  background-image: url("../images/chrome.jpg");
+}
+.backdrop--clojure {
+  background-image: url("../images/clojure.jpg");
+}
+.backdrop--clojure.bespoke-backdrop-active {
+  opacity: 0.2;
+}
+.backdrop--petehunt {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  background-image: url("../images/petehunt.jpeg");
+  background-position: 50% 0;
+  -webkit-transform-origin: 50% 20%;
+  transform-origin: 50% 20%;
+  -webkit-transition: opacity 1s ease, -webkit-transform 16s ease;
+  transition: opacity 1s ease, transform 16s ease;
+}
+.backdrop--petehunt.bespoke-backdrop-active {
+  opacity: 0.2;
+}
+.backdrop--leebyron {
+  background-image: url("../images/leebyron.jpeg");
+  -webkit-transform-origin: 50% 40%;
+  transform-origin: 50% 40%;
+}
+.backdrop--leebyron.bespoke-backdrop-active {
+  opacity: 0.25;
+}
+.backdrop--swannodette {
+  background-image: url("../images/swannodette.jpg");
+  background-position: 50% 0;
+  -webkit-transform-origin: 60% 40%;
+  transform-origin: 60% 40%;
+}
+.backdrop--raynos {
+  background-image: url("../images/raynos.jpeg");
+}
+.backdrop--raynos.bespoke-backdrop-active {
+  opacity: 0.4;
+}
+.backdrop--mattesch {
+  background-image: url("../images/mattesch.png");
+  background-position: 0 100%;
+  -webkit-transform-origin: 20% 50%;
+  transform-origin: 20% 50%;
+}
+.backdrop--pascalhartig {
+  background-image: url("../images/pascalhartig.jpeg");
+  background-position: 0 20%;
+  -webkit-transform-origin: 30% 30%;
+  transform-origin: 30% 30%;
+  -webkit-transition: opacity 1s ease, -webkit-transform 16s ease;
+  transition: opacity 1s ease, transform 16s ease;
+}
+.backdrop--nicolasgallagher {
+  background-image: url("../images/nicolasgallagher.jpeg");
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transform-origin: 50% 40%;
+  transform-origin: 50% 40%;
+  -webkit-transition: opacity 1s ease, -webkit-transform 16s ease;
+  transition: opacity 1s ease, transform 16s ease;
+}
+.backdrop--yellow {
+  background: #d2d22e;
+}
+.backdrop--yellow.bespoke-backdrop-active {
+  opacity: 1;
+}
+.backdrop--still {
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -webkit-transform: none;
+  transform: none;
+}
+.backdrop--bw {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.yellow {
+  color: #000;
+}
+.yellow h1 {
+  border-color: currentColor;
+}
+.bullet.expand {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  max-width: 0;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.1em;
+  position: relative;
+  top: 0.2em;
+}
+.bullet.expand.bespoke-bullet-active {
+  opacity: 1;
+  max-width: 500px;
+}

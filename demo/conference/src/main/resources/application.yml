@@ -1,0 +1,32 @@
+---
+micronaut:
+    application:
+        name: conference
+    server.port: -1
+---
+mongodb:
+    uri: "mongodb://${MONGO_HOST:localhost}:${MONGO_PORT:27017}"
+---
+consul:
+  client:
+    registration:
+      enabled: true
+    defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"
+---
+conferences:
+    mongo:
+        database: javaland
+        collection: conferences
+
+---
+endpoints:
+  info:
+    enabled: true
+    sensitive: false
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
+info:
+  app:
+    name: ${micronaut.application.name}
