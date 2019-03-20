@@ -1,0 +1,4 @@
+= Micronaut at JavaLand 2019
+
+The `presentation/dist` directory has a `index.html` file with the slides.
+In the `demo` directory is the source code entered during the live coding.
